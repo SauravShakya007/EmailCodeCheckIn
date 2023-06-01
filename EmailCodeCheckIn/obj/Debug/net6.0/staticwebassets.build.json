@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gXY6DSpiMkHZPEeCcdCKsnvsyf/AUL7XZtH6MsD6DsA=",
+  "Source": "EmailCodeCheckIn",
+  "BasePath": "_content/EmailCodeCheckIn",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
