@@ -1,21 +1,32 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EmailCodeCheckIn.Models
+namespace EmailCodeCheckIn.Models.Entity
 {
     public class CodeCheckIn
     {
         [Key]
-       
+
         public int CodeId { get; set; }
         public string From { get; set; }
         public List<SendTo> SendTo { get; set; }
         public string Synopsis { get; set; }
         public string Description { get; set; }
         public string ImpactAnalysis { get; set; }
-        public string DeploymentDocument { get; set; }
+        public List<FileURL> DeploymentDocument { get; set; }
         public string UnitTest { get; set; }
-        public List<FileURL> FileURL {get; set;}
+        public string FilesAdded { get; set; }
+        public string FilesModified { get; set; }
+        public string FilesDeleted { get; set; }
+        public string GitBranch { get; set; }
+        public string PullRequest { get; set; }
+        public string CodeReviewedBy { get; set; }
+        public string TargetVersion { get; set; }
+        public List<FileURL> SpecificaitionDoc { get; set; }
+        public List<FileURL>TechnicalDoc { get; set; }
+        public List<FileURL> Scenarios { get; set; }
+        public string Notes { get; set; }
+        public DateTime CreatedAt { get; set; }=DateTime.Now;
     }
     public class FileURL
     {
